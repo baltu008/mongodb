@@ -11,7 +11,7 @@
     "mongoose",
     "express"
   ],
-  "author": "Dan Collins",
+  "author": "Eric Baltutis",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
@@ -23,6 +23,7 @@
     "mocha": "^5.0.5",
     "mongoose": "^5.2.4",
     "morgan": "^1.9.0",
-    "request": "^2.85.0"
+    "request": "^2.87.0",
+    "semantic-ui": "^2.3.3"
   }
 }
