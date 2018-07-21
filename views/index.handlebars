@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="header clearfix">
+        <br>
+        <h3 class="text-muted">MONGO WEB-SCRAPER</h3>
+    </div>
+
+    {{!--News Cards--}} {{!--Iterate through the results and populate the handlebars injection points with the scraped titles,
+    links, and article snippets.--}} {{#each data}}
+    <div class="card news-section">
+        <a href="{{link}}">
+            <h4 class="card-header">{{title}}</h4>
+        </a>
+        <div class="card-block">
+            {{!--
+            <h4 class="card-title"></h4>
+            </a>--}}
+
+                <p class="card-text">{{summary}}</p>
+
+            <br>
+            <a href="/articles/{{this._id}}" class="btn btn-primary">Comment</a>
+        </div>
+    </div>
+    <br>
+    <br> {{/each}}
+
+</div>
+<!-- /container -->
