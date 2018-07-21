@@ -1,7 +1,7 @@
 <div class="container">
     <div class="header clearfix">
         <br>
-        <h3 class="text-muted">MONGO WEB-SCRAPER</h3>
+        <h3>MONGO WEB-SCRAPER</h3>
     </div>
 
     {{!--News Cards--}} {{!--Iterate through the results and populate the handlebars injection points with the scraped titles,
@@ -10,8 +10,9 @@
         <div class="card-body">
             <h5 class="card-title">{{title}}</h5>
             <hr>
-            <p class="card-text">{{summary}}</p>
-            <a href="/articles/{{this._id}}" class="btn btn-primary">Comment</a>
+            <p class="card-text">{{articles.description}}</p>
+            <a href="{{link}}"/>
+            <a href="/articles.title/{{this._id}}" class="btn btn-primary">Comment</a>
         </div>
     </div>
     <br> {{/each}}
